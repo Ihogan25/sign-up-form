@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" class="href">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="header">
+                <img src="odin-lined.png">
+                <h1>Project Zilly</h1>
+            </div>
+            <p>Photo by <a href="https://unsplash.com/@xeniaradchenko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Xenia Radchenko</a> on <a href="https://unsplash.com/s/photos/retro?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+        </div>
+
+
+        <div class="content">
+            <div class="intro">
+                <p>Sign up to join a new era, a new beginning.</p>
+                <p>Your service is needed.</p>
+            </div>
+            <fieldset>
+                <h2>Lets get started.</h2>
+                <form>
+                    <div class="left">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email"required>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <div class="right">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" required>
+                        <label for="phone-number">Phone Number</label>
+                        <input type="text" id="phone-number" required>
+                        <label for="-comfirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" required>
+                    </div>
+                    <div class="button">
+                        <button type="submit" id="submit">Submit</button>
+                        <p>Already have an account? <a href="#">Log in.</a></p>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+
+        
+        
+    </div>
+    <script src="validate.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+     font-family: 'Roboto ', monospace;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.logo {
+    background-repeat: no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 100%;
+    width: 100%;
+    background: url('xenia-radchenko-ezEn4jYrVYQ-unsplash.jpg');
+    background-size: cover;
+    text-align: center;
+}
+
+.logo p {
+    color: white;
+    text-decoration: none;
+    margin-top: 30%;
+}
+p a {
+    color: white;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    background-color: black;
+    opacity: 60%;
+    margin-top: 50%;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.header h1 {
+    color: white;
+    display: inline-block;
+    font-size: 3rem;
+}
+
+.header img {
+    width: 5rem;
+    height: 100%;
+}
+
+
+.content {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    width: 100%;
+    height: 100%;
+}
+
+.intro {
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro p {
+    font-size: 2rem;
+    margin: auto;
+}
+
+fieldset {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    margin-top: 2rem;
+    box-shadow: 0 8px 3px -3px rgb(236, 236, 236);
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 50%;
+    width: 50%;
+    text-align: c;
+    margin: auto;
+    text-align: left;
+    column-gap: 4rem;
+}
+
+.left {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.right {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+input {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+button {
+    height: 2rem;
+    width: 5rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(10, 30, 200);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: pink;
+}
+
+.button {
+    position: absolute;
+    top: 87%;
+    left: 62%;
+}
+
+
+
+.button a {
+    color: black;
+}
+
+input {
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+input:hover {
+    border: 2px solid pink;
+}
